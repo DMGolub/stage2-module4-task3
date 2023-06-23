@@ -11,13 +11,12 @@ public class Rectangle implements Observable {
     private int id;
     private double sideA;
     private double sideB;
-    private List<Observer> observers;
+    private List<Observer> observers = new ArrayList<>();
 
     public Rectangle(int id, double sideA, double sideB) {
         this.id = id;
         this.sideA = sideA;
         this.sideB = sideB;
-        observers = new ArrayList<>();
     }
 
     public int getId() {
